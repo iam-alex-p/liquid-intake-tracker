@@ -11,7 +11,7 @@ import SwiftUI
 struct Liquid_Intake_TrackerApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            LITTabView()
         }
     }
 }
