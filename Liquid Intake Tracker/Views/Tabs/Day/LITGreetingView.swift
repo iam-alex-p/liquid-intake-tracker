@@ -8,12 +8,14 @@
 import SwiftUI
 
 struct LITGreetingView: View {
+    var name = ""
+    
     var body: some View {
         VStack(alignment: .leading) {
             Text("Welcome back,")
                 .font(.largeTitle)
                 .fontWeight(.heavy)
-            Text("ALEKSEI")
+            Text(name)
                 .font(.title)
                 .fontWeight(.semibold)
                 .opacity(0.7)

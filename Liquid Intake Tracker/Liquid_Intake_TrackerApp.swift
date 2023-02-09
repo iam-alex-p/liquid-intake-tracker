@@ -9,9 +9,12 @@ import SwiftUI
 
 @main
 struct Liquid_Intake_TrackerApp: App {
+    @StateObject var litViewModel = LITViewModel()
+    
     var body: some Scene {
         WindowGroup {
             LITTabView()
+                .environmentObject(litViewModel)
         }
     }
 }

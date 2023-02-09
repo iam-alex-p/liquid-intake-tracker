@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BF60D6BE29948D5300D856EE /* Double+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF60D6BD29948D5300D856EE /* Double+Ext.swift */; };
+		BF60D6C0299496F500D856EE /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF60D6BF299496F500D856EE /* Settings.swift */; };
+		BFA5524529947EC300E3B301 /* LITViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFA5524429947EC300E3B301 /* LITViewModel.swift */; };
 		BFB9258F2991E8BB00ECFEB1 /* Liquid_Intake_TrackerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB9258E2991E8BB00ECFEB1 /* Liquid_Intake_TrackerApp.swift */; };
 		BFB925912991E8BB00ECFEB1 /* LITTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB925902991E8BB00ECFEB1 /* LITTabView.swift */; };
 		BFB925932991E8BB00ECFEB1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BFB925922991E8BB00ECFEB1 /* Assets.xcassets */; };
@@ -18,9 +21,16 @@
 		BFB925AD2991F11800ECFEB1 /* Color+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB925AC2991F11800ECFEB1 /* Color+Ext.swift */; };
 		BFB925B12991F50C00ECFEB1 /* LITDayProgressBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB925B02991F50C00ECFEB1 /* LITDayProgressBarView.swift */; };
 		BFB925B32991F58100ECFEB1 /* LITDayListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB925B22991F58100ECFEB1 /* LITDayListView.swift */; };
+		BFC7A8FB2993261300CCE0D4 /* LITTimeOfDayList.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFC7A8FA2993261300CCE0D4 /* LITTimeOfDayList.swift */; };
+		BFC7A8FD299329CB00CCE0D4 /* BeverageType.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFC7A8FC299329CB00CCE0D4 /* BeverageType.swift */; };
+		BFC7A8FF29932AD400CCE0D4 /* UserInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFC7A8FE29932AD400CCE0D4 /* UserInfo.swift */; };
+		BFC7A904299341F500CCE0D4 /* InitialScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFC7A903299341F500CCE0D4 /* InitialScreenView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BF60D6BD29948D5300D856EE /* Double+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+Ext.swift"; sourceTree = "<group>"; };
+		BF60D6BF299496F500D856EE /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
+		BFA5524429947EC300E3B301 /* LITViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LITViewModel.swift; sourceTree = "<group>"; };
 		BFB9258B2991E8BB00ECFEB1 /* Liquid Intake Tracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Liquid Intake Tracker.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFB9258E2991E8BB00ECFEB1 /* Liquid_Intake_TrackerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Liquid_Intake_TrackerApp.swift; sourceTree = "<group>"; };
 		BFB925902991E8BB00ECFEB1 /* LITTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LITTabView.swift; sourceTree = "<group>"; };
@@ -33,6 +43,10 @@
 		BFB925AC2991F11800ECFEB1 /* Color+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Ext.swift"; sourceTree = "<group>"; };
 		BFB925B02991F50C00ECFEB1 /* LITDayProgressBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LITDayProgressBarView.swift; sourceTree = "<group>"; };
 		BFB925B22991F58100ECFEB1 /* LITDayListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LITDayListView.swift; sourceTree = "<group>"; };
+		BFC7A8FA2993261300CCE0D4 /* LITTimeOfDayList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LITTimeOfDayList.swift; sourceTree = "<group>"; };
+		BFC7A8FC299329CB00CCE0D4 /* BeverageType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeverageType.swift; sourceTree = "<group>"; };
+		BFC7A8FE29932AD400CCE0D4 /* UserInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfo.swift; sourceTree = "<group>"; };
+		BFC7A903299341F500CCE0D4 /* InitialScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialScreenView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,6 +60,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BFA5524329947E8F00E3B301 /* View Models */ = {
+			isa = PBXGroup;
+			children = (
+				BFA5524429947EC300E3B301 /* LITViewModel.swift */,
+			);
+			path = "View Models";
+			sourceTree = "<group>";
+		};
 		BFB925822991E8BB00ECFEB1 = {
 			isa = PBXGroup;
 			children = (
@@ -65,10 +87,11 @@
 		BFB9258D2991E8BB00ECFEB1 /* Liquid Intake Tracker */ = {
 			isa = PBXGroup;
 			children = (
-				BFB925AB2991F0F500ECFEB1 /* Extensions */,
-				BFB9259E2991E8D900ECFEB1 /* Data */,
 				BFB9259D2991E8D000ECFEB1 /* Models */,
 				BFB9259C2991E8C400ECFEB1 /* Views */,
+				BFA5524329947E8F00E3B301 /* View Models */,
+				BFB9259E2991E8D900ECFEB1 /* Data */,
+				BFB925AB2991F0F500ECFEB1 /* Extensions */,
 				BFB9258E2991E8BB00ECFEB1 /* Liquid_Intake_TrackerApp.swift */,
 				BFB925922991E8BB00ECFEB1 /* Assets.xcassets */,
 				BFB925942991E8BB00ECFEB1 /* Preview Content */,
@@ -87,6 +110,7 @@
 		BFB9259C2991E8C400ECFEB1 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				BFC7A902299341B600CCE0D4 /* Initial Screen */,
 				BFB9259F2991E92600ECFEB1 /* Tabs */,
 			);
 			path = Views;
@@ -95,6 +119,9 @@
 		BFB9259D2991E8D000ECFEB1 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				BFC7A8FC299329CB00CCE0D4 /* BeverageType.swift */,
+				BFC7A8FE29932AD400CCE0D4 /* UserInfo.swift */,
+				BF60D6BF299496F500D856EE /* Settings.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -120,10 +147,10 @@
 		BFB925A02991E93000ECFEB1 /* Day */ = {
 			isa = PBXGroup;
 			children = (
+				BFC7A8F9299325B100CCE0D4 /* Daily Progress List */,
 				BFB925A32991E96900ECFEB1 /* LITDayTabView.swift */,
 				BFB925A92991EAD600ECFEB1 /* LITGreetingView.swift */,
 				BFB925B02991F50C00ECFEB1 /* LITDayProgressBarView.swift */,
-				BFB925B22991F58100ECFEB1 /* LITDayListView.swift */,
 			);
 			path = Day;
 			sourceTree = "<group>";
@@ -148,8 +175,26 @@
 			isa = PBXGroup;
 			children = (
 				BFB925AC2991F11800ECFEB1 /* Color+Ext.swift */,
+				BF60D6BD29948D5300D856EE /* Double+Ext.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		BFC7A8F9299325B100CCE0D4 /* Daily Progress List */ = {
+			isa = PBXGroup;
+			children = (
+				BFB925B22991F58100ECFEB1 /* LITDayListView.swift */,
+				BFC7A8FA2993261300CCE0D4 /* LITTimeOfDayList.swift */,
+			);
+			path = "Daily Progress List";
+			sourceTree = "<group>";
+		};
+		BFC7A902299341B600CCE0D4 /* Initial Screen */ = {
+			isa = PBXGroup;
+			children = (
+				BFC7A903299341F500CCE0D4 /* InitialScreenView.swift */,
+			);
+			path = "Initial Screen";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -222,14 +267,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BFC7A904299341F500CCE0D4 /* InitialScreenView.swift in Sources */,
 				BFB925912991E8BB00ECFEB1 /* LITTabView.swift in Sources */,
 				BFB925B32991F58100ECFEB1 /* LITDayListView.swift in Sources */,
+				BF60D6BE29948D5300D856EE /* Double+Ext.swift in Sources */,
 				BFB925AD2991F11800ECFEB1 /* Color+Ext.swift in Sources */,
 				BFB925AA2991EAD600ECFEB1 /* LITGreetingView.swift in Sources */,
 				BFB9258F2991E8BB00ECFEB1 /* Liquid_Intake_TrackerApp.swift in Sources */,
 				BFB925A62991E97700ECFEB1 /* LITStatsTabView.swift in Sources */,
+				BFC7A8FF29932AD400CCE0D4 /* UserInfo.swift in Sources */,
 				BFB925A42991E96900ECFEB1 /* LITDayTabView.swift in Sources */,
+				BF60D6C0299496F500D856EE /* Settings.swift in Sources */,
+				BFC7A8FD299329CB00CCE0D4 /* BeverageType.swift in Sources */,
 				BFB925B12991F50C00ECFEB1 /* LITDayProgressBarView.swift in Sources */,
+				BFA5524529947EC300E3B301 /* LITViewModel.swift in Sources */,
+				BFC7A8FB2993261300CCE0D4 /* LITTimeOfDayList.swift in Sources */,
 				BFB925A82991E98500ECFEB1 /* LITSettingsTabView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
