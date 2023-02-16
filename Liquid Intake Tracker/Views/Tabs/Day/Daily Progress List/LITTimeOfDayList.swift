@@ -7,21 +7,32 @@
 
 import SwiftUI
 
-struct LITTimeOfDayList: View {
-    let timeOfDay: String
+struct LITTimeOfDayList: View, Hashable {
+    let dayPart: String
+    
+    let models: [DailyProgress] = [
+        .init(liquidIntake: Double.random(in: 0.0...100.0), date: Date()),
+        .init(liquidIntake: Double.random(in: 0.0...100.0), date: Date()),
+        .init(liquidIntake: Double.random(in: 0.0...100.0), date: Date()),
+        .init(liquidIntake: Double.random(in: 0.0...100.0), date: Date()),
+        .init(liquidIntake: Double.random(in: 0.0...100.0), date: Date())
+    ]
     
     var body: some View {
-//        List {
-            ForEach(["1", "2", "3", "4"].indices) { number in
-                Text(String(number))
+        NavigationStack {
+            List(models) { liquidIntake in
+                NavigationLink("Intake = \(liquidIntake.liquidIntake.rounded())", value: liquidIntake)
             }
-//            .navigationTitle(timeOfDay)
-//        }
+            .navigationTitle(dayPart)
+            .navigationDestination(for: DailyProgress.self, destination: { liquidIntake in
+                Text("\(dayPart) - \(liquidIntake.liquidIntake.rounded)")
+            })
+        }
     }
 }
 
 struct LITTimeOfDayList_Previews: PreviewProvider {
     static var previews: some View {
-        LITTimeOfDayList(timeOfDay: "Morning")
+        LITTimeOfDayList(dayPart: "Morning")
     }
 }

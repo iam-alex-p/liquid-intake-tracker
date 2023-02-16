@@ -8,12 +8,12 @@
 import SwiftUI
 
 struct LITTabView: View {
-    @EnvironmentObject var litViewModel: LITViewModel
+    @EnvironmentObject var settingsVM : LITSettingsViewModel
     
     var body: some View {
         TabView {
             LITDayTabView()
-                .environmentObject(litViewModel)
+                .environmentObject(settingsVM)
                 .tabItem {
                     Label("Your Day", systemImage: "cup.and.saucer")
                 }
@@ -22,7 +22,7 @@ struct LITTabView: View {
                     Label("Statistics", systemImage: "calendar")
                 }
             LITSettingsTabView()
-                .environmentObject(litViewModel)
+                .environmentObject(settingsVM)
                 .tabItem {
                     Label("Settings", systemImage: "gear")
                 }
@@ -33,6 +33,6 @@ struct LITTabView: View {
 struct LITTabView_Previews: PreviewProvider {
     static var previews: some View {
         LITTabView()
-            .environmentObject(LITViewModel())
+            .environmentObject(LITSettingsViewModel())
     }
 }

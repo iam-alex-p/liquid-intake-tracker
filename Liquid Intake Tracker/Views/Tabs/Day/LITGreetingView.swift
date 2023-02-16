@@ -8,29 +8,22 @@
 import SwiftUI
 
 struct LITGreetingView: View {
+    @State private var dayPart = ""
     var name = ""
     
     var body: some View {
         VStack(alignment: .leading) {
-            Text("Welcome back,")
+            Text("Good \(self.dayPart),")
                 .font(.largeTitle)
                 .fontWeight(.heavy)
+                .onAppear {
+                    self.dayPart = Date().dayPart
+                }
             Text(name)
                 .font(.title)
                 .fontWeight(.semibold)
                 .opacity(0.7)
-            
-            GreetingSubView()
-                .padding(.top, 10)
         }
-    }
-}
-
-struct GreetingSubView: View {
-    var body: some View {
-        Text("That is how you\nday is going so far")
-            .font(.headline)
-            .fontWeight(.bold)
     }
 }
 

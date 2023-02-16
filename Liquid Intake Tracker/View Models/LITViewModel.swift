@@ -5,24 +5,28 @@
 //  Created by Aleksei Pokolev on 2/8/23.
 //
 
-import Foundation
+import SwiftUI
+import Combine
 
+@MainActor
 final class LITViewModel: ObservableObject {
-    @Published var userInfo = UserInfo()
-    @Published var settings = Settings()
+    @Published private var dataManager: DataManager
+    @Published var currentIntake = 0.0
     
-    var liquidIntake: Double {
-        let weight = settings.weightUnits == .lb ? userInfo.weight.kg : userInfo.weight
-        
-        let intake = (weight * Double(UserInfo.calculateAge(birthDate: userInfo.dob))) / 28.3
-        
-        switch settings.volumeUnits {
-        case .cups:
-            return intake.cup
-        case .l:
-            return intake.l
-        default:
-            return intake
+    var anyCancellable: AnyCancellable?
+    
+    init(dataManager: DataManager = .shared) {
+        self.dataManager = dataManager
+        anyCancellable = dataManager.objectWillChange.sink { [weak self] (_) in
+            self?.objectWillChange.send()
         }
+    }
+    
+    var liquidIntakeEntries: [LiquidIntake] {
+        dataManager.liquidIntakeArray
+    }
+    
+    func addLiquidIntake(type: String, volumeOZ: Double, dateTime: Date) {
+        dataManager.addLiquidIntakeEntry(type: type, volumeOz: volumeOZ, dateTime: dateTime)
     }
 }

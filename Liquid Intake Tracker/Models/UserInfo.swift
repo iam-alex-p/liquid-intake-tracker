@@ -7,8 +7,8 @@
 
 import Foundation
 
-struct UserInfo {
-    init(name: String = "", dob: Date = Date(), weight: Double = UserInfo.minWeight) {
+struct UserInfo: Codable {
+    init(name: String = "Stranger", dob: Date = Date(), weight: Double = UserInfo.minWeight) {
         self.name = name
         self.dob = dob
         self.weight = weight

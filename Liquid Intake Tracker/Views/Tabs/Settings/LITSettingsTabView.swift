@@ -8,37 +8,51 @@
 import SwiftUI
 
 struct LITSettingsTabView: View {
-    @State private var editMode: EditMode = .inactive
-    @EnvironmentObject var litViewModel: LITViewModel
-    
-    init() {}
+    @EnvironmentObject private var settingsVM: LITSettingsViewModel
     
     var body: some View {
-        NavigationView {
-            List {
+        NavigationStack {
+            Form {
                 Section(header: Text("User Information")) {
-                    TextField(text: $litViewModel.userInfo.name) {
+                    HStack {
                         Text("Name")
-                        
+                        TextField("", text: $settingsVM.userInfo.name)
                     }
-                    DatePicker("Birthdate", selection: $litViewModel.userInfo.dob, in: UserInfo.rngBirthDate, displayedComponents: [.date])
-                    TextField("Weight", value: $litViewModel.userInfo.weight, format: .number)
+                    
+                    DatePicker("Birthdate", selection: $settingsVM.userInfo.dob, in: UserInfo.rngBirthDate, displayedComponents: [.date])
+                    
+                    HStack {
+                        Text("Weight, \(settingsVM.settings.weightUnits.name)")
+                        TextField("Weight", value: $settingsVM.userInfo.weight, format: .number)
+                            .keyboardType(.numbersAndPunctuation)
+                    }
                 }
                 
                 Section(header: Text("Units")) {
-                    Picker("Volume", selection: $litViewModel.settings.volumeUnits) {
-                        ForEach(VolumeUnits.allCases) {
+                    Picker("Volume", selection: $settingsVM.settings.volumeUnits) {
+                        ForEach(Settings.VolumeUnits.allCases) {
                             Text($0.rawValue)
                         }
                     }
-                    Picker("Weight", selection: $litViewModel.settings.weightUnits) {
-                        ForEach(WeightUnits.allCases) {
+                    
+                    Picker("Weight", selection: $settingsVM.settings.weightUnits) {
+                        ForEach(Settings.WeightUnits.allCases) {
                             Text($0.rawValue)
                         }
+                    }
+                    .onChange(of: settingsVM.settings.weightUnits) {
+                        settingsVM.convertUserWeight($0)
                     }
                 }
             }
-            .environment(\.editMode, $editMode)
+            .pickerStyle(.menu)
+            .multilineTextAlignment(.trailing)
+            .autocorrectionDisabled()
+            .onDisappear {
+                Task {
+                    await settingsVM.saveSettings()
+                }
+            }
             .navigationBarTitle("Settings")
         }
     }
@@ -47,6 +61,6 @@ struct LITSettingsTabView: View {
 struct LITSettingsTabView_Previews: PreviewProvider {
     static var previews: some View {
         LITSettingsTabView()
-            .environmentObject(LITViewModel())
+            .environmentObject(LITSettingsViewModel())
     }
 }

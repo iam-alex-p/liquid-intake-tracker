@@ -16,4 +16,6 @@ extension Double {
     
     var lb: Double { self }
     var kg: Double { self / 2.205 }
+    
+    var kgToLb: Double { self * 2.205 }
 }

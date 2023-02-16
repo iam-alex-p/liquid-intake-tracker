@@ -7,8 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BF3DE3B129961986000C361F /* Date+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF3DE3B029961986000C361F /* Date+Ext.swift */; };
+		BF4721DC29988E8600205C0F /* LITSettingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF4721DB29988E8600205C0F /* LITSettingsViewModel.swift */; };
 		BF60D6BE29948D5300D856EE /* Double+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF60D6BD29948D5300D856EE /* Double+Ext.swift */; };
 		BF60D6C0299496F500D856EE /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF60D6BF299496F500D856EE /* Settings.swift */; };
+		BF87ECD329996A9F003A44A6 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF87ECD229996A9F003A44A6 /* DataManager.swift */; };
 		BFA5524529947EC300E3B301 /* LITViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFA5524429947EC300E3B301 /* LITViewModel.swift */; };
 		BFB9258F2991E8BB00ECFEB1 /* Liquid_Intake_TrackerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB9258E2991E8BB00ECFEB1 /* Liquid_Intake_TrackerApp.swift */; };
 		BFB925912991E8BB00ECFEB1 /* LITTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB925902991E8BB00ECFEB1 /* LITTabView.swift */; };
@@ -19,17 +22,28 @@
 		BFB925A82991E98500ECFEB1 /* LITSettingsTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB925A72991E98500ECFEB1 /* LITSettingsTabView.swift */; };
 		BFB925AA2991EAD600ECFEB1 /* LITGreetingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB925A92991EAD600ECFEB1 /* LITGreetingView.swift */; };
 		BFB925AD2991F11800ECFEB1 /* Color+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB925AC2991F11800ECFEB1 /* Color+Ext.swift */; };
-		BFB925B12991F50C00ECFEB1 /* LITDayProgressBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB925B02991F50C00ECFEB1 /* LITDayProgressBarView.swift */; };
+		BFB925B12991F50C00ECFEB1 /* LITDayProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB925B02991F50C00ECFEB1 /* LITDayProgressView.swift */; };
 		BFB925B32991F58100ECFEB1 /* LITDayListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB925B22991F58100ECFEB1 /* LITDayListView.swift */; };
+		BFC489032997FE9500BFFD8A /* LiquidIntakeTracker.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BFC489012997FE9500BFFD8A /* LiquidIntakeTracker.xcdatamodeld */; };
+		BFC489052998250900BFFD8A /* PersistentStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFC489042998250900BFFD8A /* PersistentStore.swift */; };
+		BFC4890A299829AC00BFFD8A /* OrderedCollections in Frameworks */ = {isa = PBXBuildFile; productRef = BFC48909299829AC00BFFD8A /* OrderedCollections */; };
+		BFC649CF29983F1600F490D0 /* LITAddBeverageSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFC649CE29983F1600F490D0 /* LITAddBeverageSheetView.swift */; };
+		BFC649D1299857D400F490D0 /* LiquidIntake.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFC649D0299857D400F490D0 /* LiquidIntake.swift */; };
+		BFC649D429986BE900F490D0 /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFC649D329986BE900F490D0 /* Helpers.swift */; };
 		BFC7A8FB2993261300CCE0D4 /* LITTimeOfDayList.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFC7A8FA2993261300CCE0D4 /* LITTimeOfDayList.swift */; };
 		BFC7A8FD299329CB00CCE0D4 /* BeverageType.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFC7A8FC299329CB00CCE0D4 /* BeverageType.swift */; };
 		BFC7A8FF29932AD400CCE0D4 /* UserInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFC7A8FE29932AD400CCE0D4 /* UserInfo.swift */; };
 		BFC7A904299341F500CCE0D4 /* InitialScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFC7A903299341F500CCE0D4 /* InitialScreenView.swift */; };
+		BFE591E12995F007008C23DF /* LITDailyProgressRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE591E02995F007008C23DF /* LITDailyProgressRowView.swift */; };
+		BFE591E32995F08E008C23DF /* DailyProgress.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE591E22995F08E008C23DF /* DailyProgress.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BF3DE3B029961986000C361F /* Date+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Ext.swift"; sourceTree = "<group>"; };
+		BF4721DB29988E8600205C0F /* LITSettingsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LITSettingsViewModel.swift; sourceTree = "<group>"; };
 		BF60D6BD29948D5300D856EE /* Double+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+Ext.swift"; sourceTree = "<group>"; };
 		BF60D6BF299496F500D856EE /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
+		BF87ECD229996A9F003A44A6 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 		BFA5524429947EC300E3B301 /* LITViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LITViewModel.swift; sourceTree = "<group>"; };
 		BFB9258B2991E8BB00ECFEB1 /* Liquid Intake Tracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Liquid Intake Tracker.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFB9258E2991E8BB00ECFEB1 /* Liquid_Intake_TrackerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Liquid_Intake_TrackerApp.swift; sourceTree = "<group>"; };
@@ -41,12 +55,19 @@
 		BFB925A72991E98500ECFEB1 /* LITSettingsTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LITSettingsTabView.swift; sourceTree = "<group>"; };
 		BFB925A92991EAD600ECFEB1 /* LITGreetingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LITGreetingView.swift; sourceTree = "<group>"; };
 		BFB925AC2991F11800ECFEB1 /* Color+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Ext.swift"; sourceTree = "<group>"; };
-		BFB925B02991F50C00ECFEB1 /* LITDayProgressBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LITDayProgressBarView.swift; sourceTree = "<group>"; };
+		BFB925B02991F50C00ECFEB1 /* LITDayProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LITDayProgressView.swift; sourceTree = "<group>"; };
 		BFB925B22991F58100ECFEB1 /* LITDayListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LITDayListView.swift; sourceTree = "<group>"; };
+		BFC489022997FE9500BFFD8A /* LiquidIntakeTracker.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = LiquidIntakeTracker.xcdatamodel; sourceTree = "<group>"; };
+		BFC489042998250900BFFD8A /* PersistentStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistentStore.swift; sourceTree = "<group>"; };
+		BFC649CE29983F1600F490D0 /* LITAddBeverageSheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LITAddBeverageSheetView.swift; sourceTree = "<group>"; };
+		BFC649D0299857D400F490D0 /* LiquidIntake.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiquidIntake.swift; sourceTree = "<group>"; };
+		BFC649D329986BE900F490D0 /* Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
 		BFC7A8FA2993261300CCE0D4 /* LITTimeOfDayList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LITTimeOfDayList.swift; sourceTree = "<group>"; };
 		BFC7A8FC299329CB00CCE0D4 /* BeverageType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeverageType.swift; sourceTree = "<group>"; };
 		BFC7A8FE29932AD400CCE0D4 /* UserInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfo.swift; sourceTree = "<group>"; };
 		BFC7A903299341F500CCE0D4 /* InitialScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialScreenView.swift; sourceTree = "<group>"; };
+		BFE591E02995F007008C23DF /* LITDailyProgressRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LITDailyProgressRowView.swift; sourceTree = "<group>"; };
+		BFE591E22995F08E008C23DF /* DailyProgress.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyProgress.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +75,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BFC4890A299829AC00BFFD8A /* OrderedCollections in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -64,6 +86,7 @@
 			isa = PBXGroup;
 			children = (
 				BFA5524429947EC300E3B301 /* LITViewModel.swift */,
+				BF4721DB29988E8600205C0F /* LITSettingsViewModel.swift */,
 			);
 			path = "View Models";
 			sourceTree = "<group>";
@@ -87,6 +110,7 @@
 		BFB9258D2991E8BB00ECFEB1 /* Liquid Intake Tracker */ = {
 			isa = PBXGroup;
 			children = (
+				BFC649D229986BCC00F490D0 /* Utilities */,
 				BFB9259D2991E8D000ECFEB1 /* Models */,
 				BFB9259C2991E8C400ECFEB1 /* Views */,
 				BFA5524329947E8F00E3B301 /* View Models */,
@@ -122,6 +146,8 @@
 				BFC7A8FC299329CB00CCE0D4 /* BeverageType.swift */,
 				BFC7A8FE29932AD400CCE0D4 /* UserInfo.swift */,
 				BF60D6BF299496F500D856EE /* Settings.swift */,
+				BFE591E22995F08E008C23DF /* DailyProgress.swift */,
+				BFC649D0299857D400F490D0 /* LiquidIntake.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -129,6 +155,9 @@
 		BFB9259E2991E8D900ECFEB1 /* Data */ = {
 			isa = PBXGroup;
 			children = (
+				BFC489002997FE7E00BFFD8A /* Model */,
+				BFC489042998250900BFFD8A /* PersistentStore.swift */,
+				BF87ECD229996A9F003A44A6 /* DataManager.swift */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -147,10 +176,11 @@
 		BFB925A02991E93000ECFEB1 /* Day */ = {
 			isa = PBXGroup;
 			children = (
-				BFC7A8F9299325B100CCE0D4 /* Daily Progress List */,
 				BFB925A32991E96900ECFEB1 /* LITDayTabView.swift */,
 				BFB925A92991EAD600ECFEB1 /* LITGreetingView.swift */,
-				BFB925B02991F50C00ECFEB1 /* LITDayProgressBarView.swift */,
+				BFB925B02991F50C00ECFEB1 /* LITDayProgressView.swift */,
+				BFC7A8F9299325B100CCE0D4 /* Daily Progress List */,
+				BFC649CE29983F1600F490D0 /* LITAddBeverageSheetView.swift */,
 			);
 			path = Day;
 			sourceTree = "<group>";
@@ -176,8 +206,25 @@
 			children = (
 				BFB925AC2991F11800ECFEB1 /* Color+Ext.swift */,
 				BF60D6BD29948D5300D856EE /* Double+Ext.swift */,
+				BF3DE3B029961986000C361F /* Date+Ext.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		BFC489002997FE7E00BFFD8A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				BFC489012997FE9500BFFD8A /* LiquidIntakeTracker.xcdatamodeld */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		BFC649D229986BCC00F490D0 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				BFC649D329986BE900F490D0 /* Helpers.swift */,
+			);
+			path = Utilities;
 			sourceTree = "<group>";
 		};
 		BFC7A8F9299325B100CCE0D4 /* Daily Progress List */ = {
@@ -185,6 +232,7 @@
 			children = (
 				BFB925B22991F58100ECFEB1 /* LITDayListView.swift */,
 				BFC7A8FA2993261300CCE0D4 /* LITTimeOfDayList.swift */,
+				BFE591E02995F007008C23DF /* LITDailyProgressRowView.swift */,
 			);
 			path = "Daily Progress List";
 			sourceTree = "<group>";
@@ -213,6 +261,9 @@
 			dependencies = (
 			);
 			name = "Liquid Intake Tracker";
+			packageProductDependencies = (
+				BFC48909299829AC00BFFD8A /* OrderedCollections */,
+			);
 			productName = "Liquid Intake Tracker";
 			productReference = BFB9258B2991E8BB00ECFEB1 /* Liquid Intake Tracker.app */;
 			productType = "com.apple.product-type.application";
@@ -241,6 +292,9 @@
 				Base,
 			);
 			mainGroup = BFB925822991E8BB00ECFEB1;
+			packageReferences = (
+				BFC48908299829AC00BFFD8A /* XCRemoteSwiftPackageReference "swift-collections" */,
+			);
 			productRefGroup = BFB9258C2991E8BB00ECFEB1 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -272,17 +326,27 @@
 				BFB925B32991F58100ECFEB1 /* LITDayListView.swift in Sources */,
 				BF60D6BE29948D5300D856EE /* Double+Ext.swift in Sources */,
 				BFB925AD2991F11800ECFEB1 /* Color+Ext.swift in Sources */,
+				BFC489052998250900BFFD8A /* PersistentStore.swift in Sources */,
 				BFB925AA2991EAD600ECFEB1 /* LITGreetingView.swift in Sources */,
 				BFB9258F2991E8BB00ECFEB1 /* Liquid_Intake_TrackerApp.swift in Sources */,
+				BFC649D1299857D400F490D0 /* LiquidIntake.swift in Sources */,
+				BFC649CF29983F1600F490D0 /* LITAddBeverageSheetView.swift in Sources */,
 				BFB925A62991E97700ECFEB1 /* LITStatsTabView.swift in Sources */,
+				BF87ECD329996A9F003A44A6 /* DataManager.swift in Sources */,
 				BFC7A8FF29932AD400CCE0D4 /* UserInfo.swift in Sources */,
+				BF3DE3B129961986000C361F /* Date+Ext.swift in Sources */,
 				BFB925A42991E96900ECFEB1 /* LITDayTabView.swift in Sources */,
 				BF60D6C0299496F500D856EE /* Settings.swift in Sources */,
+				BFC489032997FE9500BFFD8A /* LiquidIntakeTracker.xcdatamodeld in Sources */,
 				BFC7A8FD299329CB00CCE0D4 /* BeverageType.swift in Sources */,
-				BFB925B12991F50C00ECFEB1 /* LITDayProgressBarView.swift in Sources */,
+				BFE591E32995F08E008C23DF /* DailyProgress.swift in Sources */,
+				BFB925B12991F50C00ECFEB1 /* LITDayProgressView.swift in Sources */,
+				BFC649D429986BE900F490D0 /* Helpers.swift in Sources */,
+				BF4721DC29988E8600205C0F /* LITSettingsViewModel.swift in Sources */,
 				BFA5524529947EC300E3B301 /* LITViewModel.swift in Sources */,
 				BFC7A8FB2993261300CCE0D4 /* LITTimeOfDayList.swift in Sources */,
 				BFB925A82991E98500ECFEB1 /* LITSettingsTabView.swift in Sources */,
+				BFE591E12995F007008C23DF /* LITDailyProgressRowView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -489,6 +553,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		BFC48908299829AC00BFFD8A /* XCRemoteSwiftPackageReference "swift-collections" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apple/swift-collections.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		BFC48909299829AC00BFFD8A /* OrderedCollections */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BFC48908299829AC00BFFD8A /* XCRemoteSwiftPackageReference "swift-collections" */;
+			productName = OrderedCollections;
+		};
+/* End XCSwiftPackageProductDependency section */
+
+/* Begin XCVersionGroup section */
+		BFC489012997FE9500BFFD8A /* LiquidIntakeTracker.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				BFC489022997FE9500BFFD8A /* LiquidIntakeTracker.xcdatamodel */,
+			);
+			currentVersion = BFC489022997FE9500BFFD8A /* LiquidIntakeTracker.xcdatamodel */;
+			path = LiquidIntakeTracker.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = BFB925832991E8BB00ECFEB1 /* Project object */;
 }

@@ -8,44 +8,19 @@
 import SwiftUI
 
 struct LITDayListView: View {
-    var body: some View {
-        List {
-            LITTimeOfDayList(timeOfDay: "Morning")
-                .navigationTitle("Test")
-            LITTimeOfDayList(timeOfDay: "Afternoon")
-            LITTimeOfDayList(timeOfDay: "Evening")
-            LITTimeOfDayList(timeOfDay: "Night")
+    let dayParts = [
+        LITTimeOfDayList(dayPart: DayPart.morning.name),
+        LITTimeOfDayList(dayPart: DayPart.afternoon.name),
+        LITTimeOfDayList(dayPart: DayPart.evening.name),
+        LITTimeOfDayList(dayPart: DayPart.night.name),
+    ]
+    
+    var body: some View {        
+        NavigationStack {
+            List(dayParts, id: \.self) { dayPart in
+                dayPart
+            }
         }
-//        NavigationView {
-//            List {
-//                Section(header: Label("Morning", systemImage: "sunrise")) {
-//
-//                }
-//
-//                Section(header: Label("Afternoon", systemImage: "sun.min")) {
-//
-//                }
-//
-//                Section(header: Label("Evening", systemImage: "sunset")) {
-//
-//                }
-//
-//                Section(header: Label("Night", systemImage: "moon")) {
-//
-//                }
-//            }
-//            .navigationTitle("Daily Progress")
-//            .toolbar {
-//                ToolbarItem(placement: .primaryAction) {
-//                    Button {
-//
-//                    } label: {
-//                        Image(systemName: "plus")
-//                    }
-//
-//                }
-//            }
-//        }
     }
 }
 

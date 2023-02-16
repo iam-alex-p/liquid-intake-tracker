@@ -17,7 +17,7 @@ enum BeverageType: String, Identifiable, CaseIterable {
     case dairy
     case other
     
-    var id: Self {
-        self
-    }
+    var id: Self { self }
+    
+    var name: String { self.rawValue.capitalized }
 }
